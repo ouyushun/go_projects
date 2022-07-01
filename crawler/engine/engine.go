@@ -23,10 +23,9 @@ func Run(seeds ...Request) {
 		}
 
 		parserResult := req.ParserFunc(body)
-		fmt.Printf("%s", requests)
+		//fmt.Printf("%s", requests)
 		requests = append(requests, parserResult.Requests...)
-		fmt.Printf("%s", requests)
-		break
+		//fmt.Printf("%s", requests)
 		//fmt.Printf("Got item %v", parserResult.Items)
 	}
 }

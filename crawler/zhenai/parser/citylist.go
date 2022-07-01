@@ -13,7 +13,11 @@ func ParserCityList(contents []byte) engine.ParserResult{
 	result := engine.ParserResult{}
 	for _, m := range matchsRes {
 		result.Items = append(result.Items, m[2])
-		result.Requests = append(result.Requests, engine.Request{string(m[1]), engine.NilParser, }, )
+		result.Requests = append(result.Requests,
+			engine.Request{
+				string(m[1]),
+				ParserCity, },
+			)
 	}
 	return result
 }

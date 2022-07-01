@@ -17,4 +17,3 @@ func Fetch(url string) ([]byte, error) {
 	}
 	return ioutil.ReadAll(response.Body)
 }
-
