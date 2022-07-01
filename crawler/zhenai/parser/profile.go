@@ -3,6 +3,7 @@ package parser
 import (
 	"crawler.com/oys/learngo/engine"
 	"crawler.com/oys/learngo/model"
+	"fmt"
 	"regexp"
 	"strconv"
 )
@@ -36,8 +37,9 @@ var guessRe = regexp.MustCompile(
 var idUrlRe = regexp.MustCompile(
 	`.*album\.zhenai\.com/u/([\d]+)`)
 
-func ParseProfile(contents []byte) engine.ParserResult {
+func ParseProfile(contents []byte, name string) engine.ParserResult {
 	profile := model.Profile{}
+	profile.Name = name
 	match := ageRe.FindSubmatch(contents)
 	if match != nil {
 		age, _ := strconv.Atoi(string(match[1]))
@@ -70,6 +72,7 @@ func ParseProfile(contents []byte) engine.ParserResult {
 	result := engine.ParserResult{
 		Items: []interface{}{profile},
 	}
+	fmt.Println(result)
 	return result
 }
 

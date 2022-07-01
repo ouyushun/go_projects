@@ -16,7 +16,7 @@ func ParserCityList(contents []byte) engine.ParserResult{
 		result.Requests = append(result.Requests,
 			engine.Request{
 				string(m[1]),
-				ParserCity, },
+				ParserCity,},
 			)
 	}
 	return result
