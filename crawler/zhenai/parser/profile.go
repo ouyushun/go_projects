@@ -3,7 +3,6 @@ package parser
 import (
 	"crawler.com/oys/learngo/engine"
 	"crawler.com/oys/learngo/model"
-	"fmt"
 	"regexp"
 	"strconv"
 )
@@ -72,7 +71,6 @@ func ParseProfile(contents []byte, name string) engine.ParserResult {
 	result := engine.ParserResult{
 		Items: []interface{}{profile},
 	}
-	fmt.Println(result)
 	return result
 }
 

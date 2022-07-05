@@ -6,7 +6,11 @@ import (
 	"log"
 )
 
-func Run(seeds ...Request) {
+type SimpleEngine struct {
+
+}
+
+func (eg SimpleEngine) Run(seeds ...Request) {
 	fmt.Println(seeds)
 	var requests []Request
 	for _, r := range seeds {
@@ -26,6 +30,7 @@ func Run(seeds ...Request) {
 
 
 func worker(req Request) (ParserResult, error){
+	//fmt.Println("fetching ", req.Url)
 	body, err := fetcher.Fetch(req.Url)
 	if err != nil {
 		log.Printf("Fetcher error url : %s, error: %s", req.Url, err)
