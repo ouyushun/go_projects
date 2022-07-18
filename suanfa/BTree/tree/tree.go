@@ -47,10 +47,12 @@ func (tree *Tree) SelectTree() {
 		return
 	}
 	var queue []*Node = []*Node{tree.Root}
+	var queueVal []int = []int{}
 	for len(queue) != 0 {
 		cur := queue[0]
 		queue = queue[1:]
 		fmt.Printf("%v ", cur.Value)
+		queueVal = append(queueVal, cur.Value)
 		if cur.Left != nil {
 			queue = append(queue, cur.Left)
 		}
@@ -58,6 +60,7 @@ func (tree *Tree) SelectTree() {
 			queue = append(queue, cur.Right)
 		}
 	}
+	fmt.Println(queueVal)
 }
 
 // 先序遍历：即是深度优先方式搜索，使用递归方式实现

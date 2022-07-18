@@ -1,6 +1,8 @@
 package engine
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type ConCurrentEngine struct {
 	Scheduler Scheduler
@@ -30,10 +32,7 @@ func (eg *ConCurrentEngine) Run(seeds ...Request) {
 	for {
 		result := <- out
 		for _, item := range result.Items {
-			//fmt.Printf("%s", item)
-			if item == nil {
-
-			}
+			fmt.Printf("%s", item)
 		}
 
 		for _, request := range result.Requests {
