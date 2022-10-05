@@ -9,14 +9,17 @@
         <module name="bigdata-struct" />
         <module name="bigdata-flume" />
         <module name="bigdata-redis" />
-        <module name="bigdata-streaming" />
         <module name="bigdata-kafka-api" />
         <module name="log-web" />
         <module name="log-service" />
+        <module name="bigdata-zk" />
         <module name="bigdata-hbase" />
+        <module name="bigdata-ss" />
+        <module name="bigdata-mapreduce" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="bigdata-streaming" target="8" />
       <module name="wrapper" target="1.5" />
     </bytecodeTargetLevel>
   </component>

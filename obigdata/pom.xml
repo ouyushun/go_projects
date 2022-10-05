@@ -12,19 +12,21 @@
         <module>log-service</module>
         <module>bigdata-hbase</module>
         <module>bigdata-redis</module>
-        <module>bigdata-streaming</module>
         <module>bigdata-struct</module>
         <module>log-web</module>
         <module>bigdata-flume</module>
         <module>bigdata-kafka-api</module>
+        <module>bigdata-ss</module>
+        <module>bigdata-zk</module>
+        <module>bigdata-mapreduce</module>
     </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
-        <hadoop.version>2.6.0-cdh5.7.0</hadoop.version>
         <flume.version>1.6.0-cdh5.7.0</flume.version>
         <kafka.version>3.2.0</kafka.version>
+        <spark.version>3.0.0</spark.version>
     </properties>
 
 
@@ -47,7 +49,7 @@
             <dependency>
                 <groupId>org.apache.hadoop</groupId>
                 <artifactId>hadoop-client</artifactId>
-                <version>${hadoop.version}</version>
+                <version>3.1.3</version>
             </dependency>
 
             <dependency>
@@ -60,6 +62,11 @@
                 <groupId>org.apache.kafka</groupId>
                 <artifactId>kafka-clients</artifactId>
                 <version>${kafka.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.spark</groupId>
+                <artifactId>spark-streaming_2.12</artifactId>
+                <version>${spark.version}</version>
             </dependency>
 
             <dependency>
