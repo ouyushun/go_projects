@@ -28,6 +28,7 @@ public class FlowBean implements Writable {
         dataOutput.writeLong(downFlow);
         dataOutput.writeLong(sumFlow);
     }
+
     //反序列化书序要与序列化一致。
     @Override
     public void readFields(DataInput dataInput) throws IOException {

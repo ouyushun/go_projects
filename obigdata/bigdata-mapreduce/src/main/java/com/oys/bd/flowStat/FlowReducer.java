@@ -3,7 +3,6 @@ package com.oys.bd.flowStat;
 import com.oys.bd.flowStat.writable.FlowBean;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
-import org.apache.hadoop.yarn.webapp.hamlet2.HamletSpec;
 
 import java.io.IOException;
 

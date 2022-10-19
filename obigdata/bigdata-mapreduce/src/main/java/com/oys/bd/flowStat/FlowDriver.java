@@ -13,6 +13,7 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 import java.io.IOException;
+import java.security.Timestamp;
 
 /**
  * /Users/ouyushun/work/code/goProject/obigdata/bigdata-flume
@@ -41,9 +42,12 @@ public class FlowDriver {
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(FlowBean.class);
 
+        //设置inputFormat, 默认为TextInputFormat
+        //job.setInputFormatClass("");
+
         //6. 设置输入路径和数出路径
         FileInputFormat.setInputPaths(job, new Path("/Users/ouyushun/mr/flow/in.txt"));
-        FileOutputFormat.setOutputPath(job, new Path("/Users/ouyushun/mr/flow/out"));
+        FileOutputFormat.setOutputPath(job, new Path("/Users/ouyushun/mr/flow/out" + Math.random()));
 
         //7. 提交job
         boolean res = job.waitForCompletion(true);
