@@ -11,30 +11,63 @@ type ListNode struct {
 
 func main() {
 
-	a := []int{1,2,3,4}
-	a = append(a, 5)
-
-
-
-
-
 	head := ListNode{1, nil}
 	head.Next = &ListNode{2, nil}
 	head.Next.Next = &ListNode{3, nil}
-	res := reverseList(&head)
+	//res := reverseList(&head)
+	res := doOp(&head)
 	fmt.Println(res)
 	fmt.Println(res.Next)
 	fmt.Println(res.Next.Next)
 }
 
+
+
+func doOp(l *ListNode) *ListNode {
+	var head *ListNode
+	for l != nil {
+		pre := head
+
+		head = new(ListNode)
+		head.Val = l.Val
+
+		head.Next = pre
+
+
+
+		l = l.Next
+	}
+	return head
+}
+
+
+
+
+
+
+
 func reverseList(head *ListNode) *ListNode {
 	curr := head
-	pre := &ListNode{}
+	newLink := &ListNode{}
 	for curr != nil{
 		next := curr.Next
-		curr.Next = pre
-		pre = curr
+		curr.Next = newLink
+		newLink = curr
+
 		curr = next
 	}
-	return pre
+	return newLink
+}
+
+func Recerse2(head *ListNode) *ListNode {
+	curr := head
+	newHead := &ListNode{}
+
+	for curr != nil {
+
+
+
+		curr = curr.Next
+	}
+	return newHead
 }

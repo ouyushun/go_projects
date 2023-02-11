@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type ListNode struct {
 	Val int
@@ -12,15 +14,16 @@ func main() {
 	l1.Val = 1
 	l1.Next= &ListNode{Val: 2}
 	fmt.Println(l1.Next.Val)
-	//addTwoNumbers(&l1, &l2)
+
+	addTwoNumbers(&l1, &l1)
 }
 
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
-	dummy := new(ListNode)
-	curr := dummy
+	head := new(ListNode)
+	curr := head
 	carry := 0
 
-	for l1 != nil || l2 != nil || carry > 0 {
+	for (l1 != nil || l2 != nil || carry > 0) {
 		curr.Next = new(ListNode)
 		curr = curr.Next
 		if l1 != nil {
@@ -34,5 +37,5 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 		curr.Val = carry % 10
 		carry /= 10
 	}
-	return dummy.Next
+	return head.Next
 }

@@ -24,6 +24,14 @@ func t (a *[]int) {
 	fmt.Println(a)
 }
 
+func rev2(l *Node) *Node {
+	if l.Next == nil {
+		return l
+	}
+	
+
+}
+
 func Reverse(l *Node) *Node {
 	var head *Node
 	for l != nil {

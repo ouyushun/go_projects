@@ -70,6 +70,7 @@ func (this *CQueue) DeleteHead() int {
 			this.stackA = this.stackA[:index]
 		}
 	}
+
 	// 这时候表示 stackB 内已有元素
 	// 获取 stackB 最末尾元素的下标
 	index := len(this.stackB) - 1

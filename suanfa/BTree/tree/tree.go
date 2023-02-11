@@ -1,6 +1,9 @@
 package tree
 
-import "fmt"
+import (
+	"fmt"
+	"imooc.com/ccmouse/learngo/lang/tree"
+)
 
 // 定义节点属性
 type Node struct {
@@ -40,12 +43,16 @@ func (tree *Tree) CreateTree(value int) {
 	}
 }
 
+
+
+
 // 层次遍历：即是广度优先方式搜索，使用队列方式实现
 func (tree *Tree) SelectTree() {
 	if tree.Root == nil {
 		fmt.Println("not Root")
 		return
 	}
+	
 	var queue []*Node = []*Node{tree.Root}
 	var queueVal []int = []int{}
 	for len(queue) != 0 {
