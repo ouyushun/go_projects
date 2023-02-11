@@ -6,5 +6,7 @@ package com.oys.ds
  * @Version 1.0
  */
 object Hello {
-
+  def main(args: Array[String]): Unit = {
+    println("Hello World")
+  }
 }

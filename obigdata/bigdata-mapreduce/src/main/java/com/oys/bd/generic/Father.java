@@ -7,6 +7,12 @@ package com.oys.bd.generic;
  */
 public class Father <K, V>{
 
+
+    public static void main(String[] args) {
+        String a = "abc";
+        String b = "abc";
+
+    }
 }
 
 

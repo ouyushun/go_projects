@@ -8,6 +8,6 @@ package com.oys.bigdata.core.rdd;
 public class Filter {
 
     public static void main(String[] args) {
-
+        System.out.println("Hello Spark!");
     }
 }

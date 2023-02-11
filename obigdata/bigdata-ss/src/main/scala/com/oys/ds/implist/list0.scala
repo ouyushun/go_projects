@@ -1,4 +1,4 @@
-package com.oys.ds.list
+package com.oys.ds.implist
 
 /**
  * @Author ouyushun
@@ -7,6 +7,6 @@ package com.oys.ds.list
  */
 object list0 {
 	def main(args: Array[String]): Unit = {
-		
+		List
 	}
 }

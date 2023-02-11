@@ -5,6 +5,16 @@ package com.oys.ds.highfunc
  * @Date 2023/1/4
  * @Version 1.0
  */
-class anonymousFunc {
+object anonymousFunc {
+	def main(args: Array[String]): Unit = {
+		//匿名函数
+		//声明函数
+		val a = (msg:String) => {
+			println(msg)
+		};
+		def test() = {
+			println("aaaaa")
+		}
+	}
 
 }

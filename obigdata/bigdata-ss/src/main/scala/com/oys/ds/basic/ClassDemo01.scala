@@ -5,6 +5,15 @@ package com.oys.ds.basic
  * @Date 2022/12/22
  * @Version 1.0
  */
-class Class001 {
+class ClassDemo01 {
+	def main(args: Array[String]): Unit = {
+		val _ = "zhangsan"
+		Array
+	}
+
+}
+
+class Counter {
+	private var value = 0
 
 }

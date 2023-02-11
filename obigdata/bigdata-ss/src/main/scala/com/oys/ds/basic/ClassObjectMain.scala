@@ -5,15 +5,19 @@ package com.oys.ds.basic
  * @Date 2023/1/2
  * @Version 1.0
  */
-
-object Main {
+object ClassObjectMain  {
 	def main(args: Array[String]): Unit = {
+		val demo  = Demo
+
+
 
 	}
+
+	class Demo {
+		val class_var = "100";
+	}
+
+	object Demo {
+		val object_var = "demodemo";
+	}
 }
-
-class ClassObjectDemo {
-
-}
-
-

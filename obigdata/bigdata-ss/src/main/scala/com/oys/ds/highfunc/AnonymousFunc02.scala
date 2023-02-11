@@ -5,7 +5,7 @@ package com.oys.ds.highfunc
  * @Date 2023/1/6
  * @Version 1.0
  */
-object Func01 {
+object AnonymousFunc02 {
 	def main(args: Array[String]): Unit = {
 		def fun(): Unit = {
 			println("fun---")
@@ -32,4 +32,6 @@ object Func01 {
 		println(test((x:Int, y:Int) => {x*y}))
 		println(test((x:Int, y:Int) => {x/y}))
 	}
+
+
 }

@@ -1,6 +1,5 @@
 package com.oys.bd.commonfriends;
 
-import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
@@ -9,7 +8,7 @@ import java.io.IOException;
 
 /**
  * @Author ouyushun
- * @Date 2022/10/4
+ * @Date 2022/10/30
  * @Version 1.0
  */
 /*
@@ -18,20 +17,17 @@ import java.io.IOException;
 * KEYOUT,
 * VALUEOUT
 * */
-public class CommonFriendsMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
-
-    private Text outK = new Text();
-    private IntWritable outV = new IntWritable();
-   
-
+public class CFStep1Mapper extends Mapper<LongWritable, Text, Text, Text> {
     @Override
-    protected void map(LongWritable key, Text value, Mapper<LongWritable, Text, Text, IntWritable>.Context context) throws IOException, InterruptedException {
+    protected void map(LongWritable key, Text value, Mapper<LongWritable, Text, Text, Text>.Context context) throws IOException, InterruptedException {
         String line = value.toString();
-        String[] words = line.split(" ");
-        for  (String word:words) {
-            outK.set(word);
-            outV.set(1);
-            context.write(outK, outV);
+        String user = line.split(":")[0];
+        String friendsStr = line.split(":")[1];
+        String[] friends = friendsStr.split(",");
+        //输入： A: B,C,D,E
+        //输出: <B, A> <C, A> <D, A> <E, A>
+        for  (String friend : friends) {
+            context.write(new Text(friend), new Text(user));
         }
     }
 }

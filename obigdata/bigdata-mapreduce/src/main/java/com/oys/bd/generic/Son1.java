@@ -7,4 +7,10 @@ package com.oys.bd.generic;
  */
 public class Son1 extends Father {
 
+    public static void main(String[] args) {
+        Integer a = 2;
+        Integer b = 1;
+        Integer c = a + b;
+        System.out.println(c);
+    }
 }
