@@ -6,4 +6,5 @@ package com.oys.ds.real.common;
  * @Version 1.0
  */
 public class ddd {
+
 }

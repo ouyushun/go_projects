@@ -14,6 +14,7 @@
         <module name="log-service" />
         <module name="bigdata-zk" />
         <module name="bigdata-hbase" />
+        <module name="commerce_project" />
         <module name="bigdata-ss" />
         <module name="bigdata-mapreduce" />
       </profile>

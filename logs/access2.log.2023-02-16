@@ -1,0 +1,42 @@
+Sink class org.apache.spark.metrics.sink.MetricsServlet cannot be instantiated
+Error initializing SparkContext.
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.spark.metrics.MetricsSystem.$anonfun$registerSinks$1(MetricsSystem.scala:206)
+	at scala.collection.mutable.HashMap.$anonfun$foreach$1(HashMap.scala:138)
+	at scala.collection.mutable.HashTable.foreachEntry(HashTable.scala:236)
+	at scala.collection.mutable.HashTable.foreachEntry$(HashTable.scala:229)
+	at scala.collection.mutable.HashMap.foreachEntry(HashMap.scala:40)
+	at scala.collection.mutable.HashMap.foreach(HashMap.scala:138)
+	at org.apache.spark.metrics.MetricsSystem.registerSinks(MetricsSystem.scala:199)
+	at org.apache.spark.metrics.MetricsSystem.start(MetricsSystem.scala:103)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:601)
+	at org.apache.spark.SparkContext$.getOrCreate(SparkContext.scala:2690)
+	at org.apache.spark.sql.SparkSession$Builder.$anonfun$getOrCreate$2(SparkSession.scala:949)
+	at scala.Option.getOrElse(Option.scala:121)
+	at org.apache.spark.sql.SparkSession$Builder.getOrCreate(SparkSession.scala:943)
+	at com.oys.bigdata.spark.sql.hive.SparkOnHiveDemo$.delayedEndpoint$com$oys$bigdata$spark$sql$hive$SparkOnHiveDemo$1(SparkOnHiveDemo.scala:9)
+	at com.oys.bigdata.spark.sql.hive.SparkOnHiveDemo$delayedInit$body.apply(SparkOnHiveDemo.scala:8)
+	at scala.Function0.apply$mcV$sp(Function0.scala:34)
+	at scala.Function0.apply$mcV$sp$(Function0.scala:34)
+	at scala.runtime.AbstractFunction0.apply$mcV$sp(AbstractFunction0.scala:12)
+	at scala.App.$anonfun$main$1$adapted(App.scala:76)
+	at scala.collection.immutable.List.foreach(List.scala:389)
+	at scala.App.main(App.scala:76)
+	at scala.App.main$(App.scala:74)
+	at com.oys.bigdata.spark.sql.hive.SparkOnHiveDemo$.main(SparkOnHiveDemo.scala:8)
+	at com.oys.bigdata.spark.sql.hive.SparkOnHiveDemo.main(SparkOnHiveDemo.scala)
+Caused by: java.lang.NoClassDefFoundError: com/fasterxml/jackson/core/util/JacksonFeature
+	at com.fasterxml.jackson.databind.ObjectMapper.<init>(ObjectMapper.java:655)
+	at com.fasterxml.jackson.databind.ObjectMapper.<init>(ObjectMapper.java:558)
+	at org.apache.spark.metrics.sink.MetricsServlet.<init>(MetricsServlet.scala:45)
+	... 28 more
+Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.core.util.JacksonFeature
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 31 more

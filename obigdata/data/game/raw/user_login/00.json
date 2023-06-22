@@ -1,0 +1,22 @@
+{
+  "plat_id": "1",
+  "server_id": 5,
+  "channel_id": "2",
+  "user_id": "0107368",
+  "role_id": "3102579400731348833",
+  "role_name": "头",
+  "client_ip": "532.44.442.021",
+  "event_time": 1570620194,
+  "op_type": "1",
+  "online_time": 0,
+  "item_info": [
+    {
+      "id": 1001,
+      "cnt": 1
+    },
+    {
+      "id": 1002,
+      "cnt": 3
+    }
+  ]
+}

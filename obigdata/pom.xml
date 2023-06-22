@@ -19,6 +19,7 @@
         <module>bigdata-ss</module>
         <module>bigdata-zk</module>
         <module>bigdata-mapreduce</module>
+        <module>commerce_project</module>
     </modules>
 
     <properties>

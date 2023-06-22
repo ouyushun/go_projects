@@ -21,6 +21,14 @@
             <artifactId>spark-core_2.12</artifactId>
             <version>3.2.2</version>
         </dependency>
+
+
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-sql_2.12</artifactId>
+            <version>3.2.2</version>
+        </dependency>
+
     </dependencies>
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
