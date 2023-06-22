@@ -35,6 +35,8 @@ CREATE TABLE IF NOT EXISTS dwd_user_userinfo (
     ,last_login STRING COMMENT '最后登录时间'
     ) COMMENT '用户表' STORED AS ORC;
 
+
+
 --ROW FORMAT DELIMITED FIELDS TERMINATED BY '#' STORED AS textfile;
 DROP TABLE IF EXISTS ods_market_coupon_spu_category;
 CREATE TABLE IF NOT EXISTS ods_market_coupon_spu_category (
