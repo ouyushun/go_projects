@@ -11,6 +11,7 @@ reduce flume struct apple pair
 
 DROP TABLE IF EXISTS dwd_user_userinfo;
 CREATE TABLE IF NOT EXISTS dwd_user_userinfo (
+     id STRING COMMENT '---YYYYWWWRRR***----'
      user_id STRING COMMENT 'mistake'
     ,user_name STRING COMMENT ' garbage stem'
     ,sex INT COMMENT ' leave ice aisle thumb '
