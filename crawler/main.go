@@ -1,40 +1,22 @@
 package main
 
 import (
-	"fmt"
-	"io/ioutil"
-	http "net/http"
-	"regexp"
+	"crawler.com/oys/learngo/engine"
+	"crawler.com/oys/learngo/scheduler"
+	"crawler.com/oys/learngo/zhenai/parser"
 )
 
 func main() {
-	response, err := http.Get("http://localhost:8080/mock/www.zhenai.com/zhenghun")
-	if err != nil {
-		panic(err)
-	}
-	defer response.Body.Close()
-	if response.StatusCode != http.StatusOK {
-		fmt.Println("error, status:", response.StatusCode)
-	}
-	all, err := ioutil.ReadAll(response.Body)
-	if err != nil {
-		panic(err)
-	}
+	/*engine.SimpleEngine{}.Run(engine.Request{
+		Url: "http://localhost:8080/mock/www.zhenai.com/zhenghun",
+		ParserFunc: parser.ParserCityList,
+	})*/
 
-	fmt.Printf("%T", all)
-	printCityList(all)
-}
-
-func printCityList(contents []byte) {
-	reg := regexp.MustCompile(`<a href="(http://localhost:8080/mock/www.zhenai.com/zhenghun/[0-9a-z]+)"[^>]*>([^<]+)</a>`)
-	//fmt.Println(reg)
-	matchsRes := reg.FindAllSubmatch(contents, -1)
-	//fmt.Printf("%s", matchsRes)
-
-	for _, m := range matchsRes {
-		fmt.Printf("%s %s", m[1], m[2])
-		fmt.Println()
-	}
-
-	println(len(matchsRes))
+	e := engine.ConCurrentEngine{
+		Scheduler: &scheduler.QueueScheduler{},
+		WorkerCount: 1}
+	e.Run(engine.Request{
+		Url: "http://localhost:8080/mock/www.zhenai.com/zhenghun",
+		ParserFunc: parser.ParserCityList,
+	})
 }

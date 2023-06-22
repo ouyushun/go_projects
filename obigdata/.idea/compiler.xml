@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="bigdata-struct" />
+        <module name="bigdata-flume" />
+        <module name="bigdata-redis" />
+        <module name="bigdata-kafka-api" />
+        <module name="log-web" />
+        <module name="log-service" />
+        <module name="bigdata-zk" />
+        <module name="bigdata-hbase" />
+        <module name="commerce_project" />
+        <module name="bigdata-ss" />
+        <module name="bigdata-mapreduce" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bigdata-streaming" target="8" />
+      <module name="wrapper" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="log-web" options="-parameters" />
+    </option>
+  </component>
+</project>

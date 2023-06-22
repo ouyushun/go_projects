@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e92a88dc-ee64-43ed-bfb4-38bfac6c961d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../spark/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/golearn/fanxing/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../suanfa/CQueue/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../suanfa/ThreeSUm/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../suanfa/hanota/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../suanfa/kuohao/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../suanfa/reverseList/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../suanfa/romanToInt/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../suanfa/sort/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crawler/engine/concurrent.go" beforeDir="false" afterPath="$PROJECT_DIR$/../crawler/engine/concurrent.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crawler/scheduler/queue.go" beforeDir="false" afterPath="$PROJECT_DIR$/../crawler/scheduler/queue.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/coding-180" beforeDir="false" afterPath="$PROJECT_DIR$/../src/coding-180" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../suanfa/BTree/tree/tree.go" beforeDir="false" afterPath="$PROJECT_DIR$/../suanfa/BTree/tree/tree.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2BtGoE8oQvpahn8yeWGQpf6ajOB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="foldersAlwaysOnTop" value="false" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.formatter.settings.were.checked" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e92a88dc-ee64-43ed-bfb4-38bfac6c961d" name="Changes" comment="" />
+      <created>1657718160432</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1657718160432</updated>
+      <workItem from="1657718163147" duration="14639000" />
+      <workItem from="1657756538929" duration="596000" />
+      <workItem from="1657843644774" duration="196000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

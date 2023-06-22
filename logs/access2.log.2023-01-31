@@ -1,0 +1,17 @@
+Exception in statusUpdate
+java.util.concurrent.RejectedExecutionException: Task org.apache.spark.scheduler.TaskResultGetter$$anon$3@1ceb47c7 rejected from java.util.concurrent.ThreadPoolExecutor@738a6f35[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 1]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2063)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:830)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1379)
+	at org.apache.spark.scheduler.TaskResultGetter.enqueueSuccessfulTask(TaskResultGetter.scala:61)
+	at org.apache.spark.scheduler.TaskSchedulerImpl.liftedTree2$1(TaskSchedulerImpl.scala:815)
+	at org.apache.spark.scheduler.TaskSchedulerImpl.statusUpdate(TaskSchedulerImpl.scala:791)
+	at org.apache.spark.scheduler.local.LocalEndpoint$$anonfun$receive$1.applyOrElse(LocalSchedulerBackend.scala:71)
+	at org.apache.spark.rpc.netty.Inbox.$anonfun$process$1(Inbox.scala:115)
+	at org.apache.spark.rpc.netty.Inbox.safelyCall(Inbox.scala:213)
+	at org.apache.spark.rpc.netty.Inbox.process(Inbox.scala:100)
+	at org.apache.spark.rpc.netty.MessageLoop.org$apache$spark$rpc$netty$MessageLoop$$receiveLoop(MessageLoop.scala:75)
+	at org.apache.spark.rpc.netty.MessageLoop$$anon$1.run(MessageLoop.scala:41)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
