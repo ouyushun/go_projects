@@ -21,11 +21,3 @@ CREATE TABLE IF NOT EXISTS dwd_user_userinfo (
     ,reg_time STRING COMMENT '注册时间'
     ,last_login STRING COMMENT '最后登录时间'
     ) COMMENT '用户表' STORED AS ORC;
-
-    val sc = new SparkConf().setMaster("local[smh]").setAppName("poem-volcano")
-    val sc = new SparkConf().setMaster("local[*]").setAppName("apology-eager")
-    val sc = new SparkConf().setMaster("local[*]").setAppName("feel-)")
-    val sc = new SparkConf().setMaster("local[*]").setAppName("(swamp")
-    val sc = new SparkConf().setMaster("local[*]").setAppName("dragon--pottery")
-    val sc = new SparkConf().setMaster("local[*]").setAppName("avoid-|potato")
-    val sc = new SparkConf().setMaster("local[*]").setAppName("stove|-have")

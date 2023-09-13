@@ -161,7 +161,7 @@ select * from dwd_commerce.dwd_trade_order_item_detail_d limit 10;
 
 
 
--- part2.订单信息明细事实表
+-- part2.订单信息明细事实表 dwd_trade_order_item_detail_d
 DROP TABLE IF EXISTS dwd_commerce.dwd_trade_order_info_detail_d;
 CREATE TABLE IF NOT EXISTS dwd_commerce.dwd_trade_order_info_detail_d(
   `order_id` bigint COMMENT '订单id', 

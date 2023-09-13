@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS ods_shop_spu_info (
   spu_id int COMMENT '商品ID'
 ) COMMENT '店铺商品表' STORED AS textfile;
 
-
+d
 -------------------------------------1.dim层数据--------------------------------------------------------------------
 -- part1:店铺表的构建
 DROP TABLE IF EXISTS dim_commerce.dim_shop_base_info_ss;

@@ -12,7 +12,10 @@ import org.apache.spark.sql.{DataFrame, Dataset, Row, SparkSession}
 object sql01_ds {
 	def main(args: Array[String]): Unit = {
 		val sc = new SparkConf().setMaster("local[*]").setAppName("SparkSql-ds")
-		val spark = SparkSession.builder().config(sc).getOrCreate()
+		val spark = SparkSession.builder().config(sc)
+		  //.enableHiveSupport() //开启支持hive相关操作
+		  .getOrCreate()
+
 
 		import spark.implicits._
 
