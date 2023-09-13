@@ -5,11 +5,27 @@ dd
 ff gg h j i aa a cc
 
 data
-
+ id user_id money
 map
 reduce flume struct apple pair
 
 DROP TABLE IF EXISTS dwd_user_userinfo;
+CREATE TABLE IF NOT EXISTS dwd_user_userinfo (
+     id STRING COMMENT '---YYYYWWWRRR***----'
+     user_id STRING COMMENT ' garbage stem mistake'
+     user_id STRING COMMENT ' garbage stem mistake'
+     user_id STRING COMMENT ' garbage stem mistake'
+     user_id STRING COMMENT ' garbage stem mistake'
+    ,user_name STRING COMMENT ' garbage stem'
+    ,sex INT COMMENT ' leave ice aisle thumb '
+    ,user_money decimal(20,4) COMMENT 'sport input alien wood settle'
+    ,frozen_money decimal(20,4) COMMENT '近一个月的花费的总的金额'
+    ,address_id STRING COMMENT '用户地址ID，0表示没有获取地址'
+    ,reg_time STRING COMMENT '注册时间'
+    ,last_login STRING COMMENT '最后登录时间'
+    ) COMMENT '用户表' STORED AS ORC;
+DROP TABLE IF EXISTS dwd_user_userinfo;
+
 CREATE TABLE IF NOT EXISTS dwd_user_userinfo (
      id STRING COMMENT '---YYYYWWWRRR***----'
      user_id STRING COMMENT 'mistake'
@@ -36,3 +52,4 @@ CREATE TABLE IF NOT EXISTS dwd_user_userinfo (
     val sc = new SparkConf().setMaster("local[*]").setAppName("dragon--pottery")
     val sc = new SparkConf().setMaster("local[*]").setAppName("avoid-|potato")
     val sc = new SparkConf().setMaster("local[*]").setAppName("stove|-have")
+
