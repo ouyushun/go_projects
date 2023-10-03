@@ -28,4 +28,4 @@ CREATE TABLE IF NOT EXISTS dwd_user_userinfo (
     val sc = new SparkConf().setMaster("local[*]").setAppName("(swamp")
     val sc = new SparkConf().setMaster("local[*]").setAppName("dragon--pottery")
     val sc = new SparkConf().setMaster("local[*]").setAppName("avoid-|potato")
-    val sc = new SparkConf().setMaster("local[*]").setAppName("stove|-have")
+    val sc = new vfSparkConf().setMaster("local[*]").setAppName("stove|-have")
