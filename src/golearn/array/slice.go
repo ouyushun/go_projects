@@ -6,6 +6,8 @@ import (
 
 func main() {
 	a := make([]int, 5)
+	println(a[0],a[1],a[4])
+	println(a)
 	printSlice("a", a)
 
 	b := make([]int, 3, 5)

@@ -92,6 +92,8 @@ func (tree *Tree) SelectMid(node *Node) {
 	tree.SelectMid(node.Right)
 }
 
+
+
 // 后序遍历：即是深度优先方式搜索，使用递归方式实现
 // 左节点 --> 右节点 --> 根节点
 func (tree *Tree) SelectBack(node *Node) {

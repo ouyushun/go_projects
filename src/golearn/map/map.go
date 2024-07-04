@@ -10,5 +10,5 @@ func main() {
 	fmt.Println(m1)
 	m2 :=  new(map[string]int)
 	fmt.Println(m2)
-
 }
+

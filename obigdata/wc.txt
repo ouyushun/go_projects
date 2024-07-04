@@ -53,3 +53,16 @@ CREATE TABLE IF NOT EXISTS dwd_user_userinfo (
     val sc = new SparkConf().setMaster("local[*]").setAppName("avoid-|potato")
     val sc = new SparkConf().setMaster("local[*]").setAppName("stove|-have")
 
+序号KAPA	汇总	序号SHM	汇总	序号PA	汇总
+1	673344	1	15671781
+2	7239342	2	1567746	2
+3	6106923	3	19627563
+4	9082584	4	1596168
+5	5878705	5	1715990
+6	5414706	6	1931908
+7	6206187	7	17552847
+8	1014476	8	15641828
+9	947758	9	1941835	9
+10	6390810	10	1742670	10
+11	7757491	11	1955597	11
+12	8136192	12	1576448	12
