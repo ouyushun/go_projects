@@ -2,6 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/WTF-Solidity" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/coin/WTF-Solidity" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/obigdata/coding459" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/coding-180" vcs="Git" />
   </component>

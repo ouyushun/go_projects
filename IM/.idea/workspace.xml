@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="19133d5d-4aab-46bb-bc47-9dc046cfb113" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.github/ISSUE_TEMPLATE/bug-report.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.github/ISSUE_TEMPLATE/config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.github/ISSUE_TEMPLATE/document.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.github/ISSUE_TEMPLATE/feature-request.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.github/ISSUE_TEMPLATE/improvement-report.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.github/pull_request_template.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.github/workflows/codespell.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/Arr.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/array/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/basicType.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/bibao/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/defer-recover/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/defer/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/interface/demo00/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/interface/demo01/Animal.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/interface/demo01/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/interface/demo_pointer/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/map/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/new_make/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/point/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/slice/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/struct/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/hbase.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/mysql.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/Util1.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../coin/all_wallets.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../coin/banzhuan.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../coin/pengzhuang.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../coin/pengzhuangv2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../coin/wallets_with_balance.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/libs/Hello.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/libs/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/test/Test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/test/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../access.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../obigdata/coding459" beforeDir="false" afterPath="$PROJECT_DIR$/../obigdata/coding459" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/coding-180" beforeDir="false" afterPath="$PROJECT_DIR$/../src/coding-180" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trace.out" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go Application" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" url="file:///usr/local/go" />
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2j1PnznS0b6MhFhEYFhZmgvl8sD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="foldersAlwaysOnTop" value="false" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultGoTemplateProperty" value="Go Application" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable..is.expanded" value="true" />
+    <property name="configurable.GoLibrariesConfigurable.is.expanded" value="true" />
+    <property name="go.formatter.settings.were.checked" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="go.sdk" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Build.go build IM/basic/interface/demo_pointer">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="IM" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build IM/basic" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="IM" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <package value="IM/basic" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/basic/basicType.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build IM/basic" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="IM" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="IM/basic" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/basic/Arr.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build IM/basic/interface/demo00" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="IM" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="IM/basic/interface/demo00" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/basic/interface/demo00/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build IM/basic/interface/demo01" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="IM" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="IM/basic/interface/demo01" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/basic/interface/demo01/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build IM/basic/interface/demo_pointer" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="IM" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="IM/basic/interface/demo_pointer" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/basic/interface/demo_pointer/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build IM/basic/map" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="IM" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="IM/basic/map" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/basic/map/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build IM/basic/struct" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="IM" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="IM/basic/struct" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/basic/struct/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="IM" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Go Build.go build IM/basic" />
+      <item itemvalue="Go Build.go build IM/basic/map" />
+      <item itemvalue="Go Build.go build IM/basic/struct" />
+      <item itemvalue="Go Build.go build IM/basic/interface/demo01" />
+      <item itemvalue="Go Build.go build IM/basic/interface/demo00" />
+      <item itemvalue="Go Build.go build IM/basic/interface/demo_pointer" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build IM/basic/interface/demo_pointer" />
+        <item itemvalue="Go Build.go build IM/basic/interface/demo01" />
+        <item itemvalue="Go Build.go build IM/basic/interface/demo00" />
+        <item itemvalue="Go Build.go build IM/basic/map" />
+        <item itemvalue="Go Build.go build IM/basic/struct" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="19133d5d-4aab-46bb-bc47-9dc046cfb113" name="Changes" comment="" />
+      <created>1720551785936</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1720551785936</updated>
+      <workItem from="1720551789417" duration="1009000" />
+      <workItem from="1720552993426" duration="7526000" />
+      <workItem from="1720964297361" duration="3335000" />
+      <workItem from="1721033610460" duration="15686000" />
+      <workItem from="1721212671790" duration="12716000" />
+      <workItem from="1721343048101" duration="5089000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
