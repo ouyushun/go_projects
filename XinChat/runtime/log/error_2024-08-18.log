@@ -1,0 +1,176 @@
+panic error time:2024-08-18 22:59:35
+runtime error: invalid memory address or nil pointer dereference
+stacktrace from panic:goroutine 21 [running]:
+runtime/debug.Stack()
+	/usr/local/go/src/runtime/debug/stack.go:24 +0x64
+XinChat/pkg/logger.Recover.func1()
+	/Users/ouyushun/work/code/goProject/XinChat/pkg/logger/logger.go:141 +0x22c
+panic({0x10453e3c0?, 0x1048548c0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x124
+go.uber.org/zap.(*Logger).check(0x0, 0x0, {0x104427db9, 0xb})
+	/Users/ouyushun/go/pkg/mod/go.uber.org/zap@v1.27.0/logger.go:331 +0x4c
+go.uber.org/zap.(*Logger).Info(0x140001c8058?, {0x104427db9?, 0x140000c1628?}, {0x0, 0x0, 0x0})
+	/Users/ouyushun/go/pkg/mod/go.uber.org/zap@v1.27.0/logger.go:246 +0x40
+XinChat/controllers/test.GetUsers(0x1?)
+	/Users/ouyushun/work/code/goProject/XinChat/controllers/test/test_user.go:13 +0x40
+github.com/gin-gonic/gin.(*Context).Next(0x1400014a000)
+	/Users/ouyushun/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185 +0x40
+main.main.LimiterHandler.func3(0x1400014a000)
+	/Users/ouyushun/work/code/goProject/XinChat/middleware/limiterHandler.go:25 +0x124
+github.com/gin-gonic/gin.(*Context).Next(0x1400014a000)
+	/Users/ouyushun/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185 +0x40
+main.main.MyTime.func2(0x1400014a000)
+	/Users/ouyushun/work/code/goProject/XinChat/middleware/mytime.go:18 +0x70
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/Users/ouyushun/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+XinChat/pkg/logger.Recover(0x1400014a000)
+	/Users/ouyushun/work/code/goProject/XinChat/pkg/logger/logger.go:151 +0x70
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/Users/ouyushun/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0x1400014a000)
+	/Users/ouyushun/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249 +0xb8
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/Users/ouyushun/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0x140000a36c0, 0x1400014a000)
+	/Users/ouyushun/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633 +0x6c4
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0x140000a36c0, {0x1045c4580, 0x14000144000}, 0x14000134000)
+	/Users/ouyushun/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589 +0x174
+net/http.serverHandler.ServeHTTP({0x140001200c0?}, {0x1045c4580?, 0x14000144000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3142 +0xbc
+net/http.(*conn).serve(0x14000124000, {0x1045c4fa8, 0x1400019cb10})
+	/usr/local/go/src/net/http/server.go:2044 +0x508
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3290 +0x3f0
+
+panic error time:2024-08-18 22:59:44
+runtime error: invalid memory address or nil pointer dereference
+stacktrace from panic:goroutine 21 [running]:
+runtime/debug.Stack()
+	/usr/local/go/src/runtime/debug/stack.go:24 +0x64
+XinChat/pkg/logger.Recover.func1()
+	/Users/ouyushun/work/code/goProject/XinChat/pkg/logger/logger.go:141 +0x22c
+panic({0x10453e3c0?, 0x1048548c0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x124
+go.uber.org/zap.(*Logger).check(0x0, 0x0, {0x104427db9, 0xb})
+	/Users/ouyushun/go/pkg/mod/go.uber.org/zap@v1.27.0/logger.go:331 +0x4c
+go.uber.org/zap.(*Logger).Info(0x140001c8058?, {0x104427db9?, 0x140000c1628?}, {0x0, 0x0, 0x0})
+	/Users/ouyushun/go/pkg/mod/go.uber.org/zap@v1.27.0/logger.go:246 +0x40
+XinChat/controllers/test.GetUsers(0x1?)
+	/Users/ouyushun/work/code/goProject/XinChat/controllers/test/test_user.go:13 +0x40
+github.com/gin-gonic/gin.(*Context).Next(0x1400014a000)
+	/Users/ouyushun/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185 +0x40
+main.main.LimiterHandler.func3(0x1400014a000)
+	/Users/ouyushun/work/code/goProject/XinChat/middleware/limiterHandler.go:25 +0x124
+github.com/gin-gonic/gin.(*Context).Next(0x1400014a000)
+	/Users/ouyushun/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185 +0x40
+main.main.MyTime.func2(0x1400014a000)
+	/Users/ouyushun/work/code/goProject/XinChat/middleware/mytime.go:18 +0x70
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/Users/ouyushun/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+XinChat/pkg/logger.Recover(0x1400014a000)
+	/Users/ouyushun/work/code/goProject/XinChat/pkg/logger/logger.go:151 +0x70
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/Users/ouyushun/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0x1400014a000)
+	/Users/ouyushun/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249 +0xb8
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/Users/ouyushun/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0x140000a36c0, 0x1400014a000)
+	/Users/ouyushun/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633 +0x6c4
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0x140000a36c0, {0x1045c4580, 0x140001440e0}, 0x140001345a0)
+	/Users/ouyushun/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589 +0x174
+net/http.serverHandler.ServeHTTP({0x140001200c0?}, {0x1045c4580?, 0x140001440e0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3142 +0xbc
+net/http.(*conn).serve(0x14000124000, {0x1045c4fa8, 0x1400019cb10})
+	/usr/local/go/src/net/http/server.go:2044 +0x508
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3290 +0x3f0
+
+panic error time:2024-08-18 23:00:19
+runtime error: invalid memory address or nil pointer dereference
+stacktrace from panic:goroutine 38 [running]:
+runtime/debug.Stack()
+	/usr/local/go/src/runtime/debug/stack.go:24 +0x64
+XinChat/pkg/logger.Recover.func1()
+	/Users/ouyushun/work/code/goProject/XinChat/pkg/logger/logger.go:141 +0x22c
+panic({0x102e3a480?, 0x1031508d0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x124
+go.uber.org/zap.(*Logger).check(0x0, 0x0, {0x102d24a6f, 0xb})
+	/Users/ouyushun/go/pkg/mod/go.uber.org/zap@v1.27.0/logger.go:331 +0x4c
+go.uber.org/zap.(*Logger).Info(0x14?, {0x102d24a6f?, 0x140001d75f8?}, {0x0, 0x0, 0x0})
+	/Users/ouyushun/go/pkg/mod/go.uber.org/zap@v1.27.0/logger.go:246 +0x40
+XinChat/controllers/test.GetUsers(0x1400022c900)
+	/Users/ouyushun/work/code/goProject/XinChat/controllers/test/test_user.go:13 +0x4c
+github.com/gin-gonic/gin.(*Context).Next(0x1400022c900)
+	/Users/ouyushun/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185 +0x40
+main.main.LimiterHandler.func3(0x1400022c900)
+	/Users/ouyushun/work/code/goProject/XinChat/middleware/limiterHandler.go:25 +0x124
+github.com/gin-gonic/gin.(*Context).Next(0x1400022c900)
+	/Users/ouyushun/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185 +0x40
+main.main.MyTime.func2(0x1400022c900)
+	/Users/ouyushun/work/code/goProject/XinChat/middleware/mytime.go:18 +0x70
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/Users/ouyushun/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+XinChat/pkg/logger.Recover(0x1400022c900)
+	/Users/ouyushun/work/code/goProject/XinChat/pkg/logger/logger.go:151 +0x70
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/Users/ouyushun/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0x1400022c900)
+	/Users/ouyushun/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249 +0xb8
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/Users/ouyushun/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0x140001ab6c0, 0x1400022c900)
+	/Users/ouyushun/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633 +0x6c4
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0x140001ab6c0, {0x102ec0860, 0x140001e2380}, 0x14000268000)
+	/Users/ouyushun/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589 +0x174
+net/http.serverHandler.ServeHTTP({0x14000232c00?}, {0x102ec0860?, 0x140001e2380?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3142 +0xbc
+net/http.(*conn).serve(0x140001f66c0, {0x102ec1288, 0x14000232b10})
+	/usr/local/go/src/net/http/server.go:2044 +0x508
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3290 +0x3f0
+
+panic error time:2024-08-18 23:00:45
+runtime error: invalid memory address or nil pointer dereference
+stacktrace from panic:goroutine 38 [running]:
+runtime/debug.Stack()
+	/usr/local/go/src/runtime/debug/stack.go:24 +0x64
+XinChat/pkg/logger.Recover.func1()
+	/Users/ouyushun/work/code/goProject/XinChat/pkg/logger/logger.go:141 +0x22c
+panic({0x102e3a480?, 0x1031508d0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x124
+go.uber.org/zap.(*Logger).check(0x0, 0x0, {0x102d24a6f, 0xb})
+	/Users/ouyushun/go/pkg/mod/go.uber.org/zap@v1.27.0/logger.go:331 +0x4c
+go.uber.org/zap.(*Logger).Info(0x14?, {0x102d24a6f?, 0x140001d75f8?}, {0x0, 0x0, 0x0})
+	/Users/ouyushun/go/pkg/mod/go.uber.org/zap@v1.27.0/logger.go:246 +0x40
+XinChat/controllers/test.GetUsers(0x1400022c900)
+	/Users/ouyushun/work/code/goProject/XinChat/controllers/test/test_user.go:13 +0x4c
+github.com/gin-gonic/gin.(*Context).Next(0x1400022c900)
+	/Users/ouyushun/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185 +0x40
+main.main.LimiterHandler.func3(0x1400022c900)
+	/Users/ouyushun/work/code/goProject/XinChat/middleware/limiterHandler.go:25 +0x124
+github.com/gin-gonic/gin.(*Context).Next(0x1400022c900)
+	/Users/ouyushun/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185 +0x40
+main.main.MyTime.func2(0x1400022c900)
+	/Users/ouyushun/work/code/goProject/XinChat/middleware/mytime.go:18 +0x70
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/Users/ouyushun/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+XinChat/pkg/logger.Recover(0x1400022c900)
+	/Users/ouyushun/work/code/goProject/XinChat/pkg/logger/logger.go:151 +0x70
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/Users/ouyushun/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0x1400022c900)
+	/Users/ouyushun/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249 +0xb8
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/Users/ouyushun/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0x140001ab6c0, 0x1400022c900)
+	/Users/ouyushun/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633 +0x6c4
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0x140001ab6c0, {0x102ec0860, 0x140001e2460}, 0x14000268480)
+	/Users/ouyushun/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589 +0x174
+net/http.serverHandler.ServeHTTP({0x14000232c00?}, {0x102ec0860?, 0x140001e2460?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3142 +0xbc
+net/http.(*conn).serve(0x140001f66c0, {0x102ec1288, 0x14000232b10})
+	/usr/local/go/src/net/http/server.go:2044 +0x508
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3290 +0x3f0
+

@@ -82,7 +82,6 @@ func setOutPutFile(level logrus.Level, logName string) {
 }
 
 func LoggerToFile() gin.LoggerConfig {
-
 	if _, err := os.Stat("./runtime/log"); os.IsNotExist(err) {
 		err = os.MkdirAll("./runtime/log", 0777)
 		if err != nil {

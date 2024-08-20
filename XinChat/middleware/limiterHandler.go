@@ -5,24 +5,21 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-
-var m = make(map[string]string)
-
 func LimiterHandler() gin.HandlerFunc {
 	//闭包
-	//bug 当连接报错中断， 无法从channel取出造成阻塞
-	var limitChan = make(chan bool, 100)
+	//bug 当连接报错中断， 无法从channel取出造成阻塞---defer处理
+	var limitChan = make(chan bool, 300)
 
 	var i = 0
 	return func(ctx *gin.Context) {
 		i++
 		fmt.Println("i = ", i)
-		fmt.Println("before len-------" , len(limitChan))
 		limitChan <- true
+		//防止程序中途退出异常
 
+		defer func() {
+			<- limitChan
+		}()
 		ctx.Next()
-
-		<- limitChan
-		fmt.Println("after len-------" , len(limitChan))
 	}
 }

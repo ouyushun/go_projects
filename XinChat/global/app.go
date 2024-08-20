@@ -6,6 +6,7 @@ import (
 	"go.uber.org/zap"
 )
 
+// Application 定义 Application 结构体，用来存放一些项目启动时的变量，便于调用
 type Application struct {
 	ConfigViper *viper.Viper
 	Config config.Configuration

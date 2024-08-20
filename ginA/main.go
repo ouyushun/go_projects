@@ -34,7 +34,7 @@ func LimiterHandler() gin.HandlerFunc {
 
 		ctx.Next()
 
-		
+
 		<- limitChan
 		fmt.Println("中间件limiter 执行完毕")
 		fmt.Println("after len-------" , len(limitChan))
