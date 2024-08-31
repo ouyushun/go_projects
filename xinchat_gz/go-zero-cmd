@@ -1,0 +1,9 @@
+#api
+
+## 根据已有api生成代码
+
+ ** goctl api go -api demo.api -dir=. -style gozero
+# RPC
+/protoc --go_out=. --go-grpc_opt=require_unimplemented_servers=false --go-grpc_out=. product.proto
+## gozero根据已存在的proto生成
+//goctl rpc protoc user.proto --go_out=./ --go-grpc_out=.  --zrpc_out=./

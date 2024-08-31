@@ -1,16 +1,29 @@
 package main
 
-import "fmt"
+import "github.com/kr/pretty"
 
 type Teacher struct {
 	Name string
 	Age int
 }
 
-func main() {
-	var t1 Teacher
+func (t Teacher) ChangeName() {
+	t.Name = "newName"
+}
+type Student struct {
+	Name string
+	Age int
+}
+func (s *Student) ChangeName() {
+	s.Name = "newName"
+}
 
-	t1.Age = 18
-	t1.Name = "a"
-	fmt.Println(t1)
+func main() {
+	t := Teacher{Name: "teacher1"}
+	t.ChangeName()
+	pretty.Println(t)
+
+	s := Student{Name: "student1"}
+	s.ChangeName()
+	pretty.Println(s)
 }

@@ -19,6 +19,8 @@ func main() {
 
 	g := GetSum()
 	fmt.Println(g(1))
+	a := g(1)
+	fmt.Println(a)
 	fmt.Println(g(1))
 	fmt.Println(g(1))
 	fmt.Println(g(1))

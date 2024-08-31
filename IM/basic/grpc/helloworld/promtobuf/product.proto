@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package pb;
+
+option go_package = "../pb";
+
+//protoc --go_out=. --go-grpc_opt=require_unimplemented_servers=false --go-grpc_out=. product.proto
+
+//定义request model
+message ProductRequest {
+  int32 ProductId = 1;
+}
+
+//定义response model
+message ProductResponse {
+  int32 ProdStock = 1; //库存
+}
+
+//定义服务主体
+service ProductService {
+  //定义方法
+  rpc GetProductStock(ProductRequest) returns(ProductResponse);
+}
