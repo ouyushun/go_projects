@@ -12,7 +12,7 @@ func Router() *gin.Engine {
 
 	log.Printf("aaaaaaaaa")
 
-	user := engine.Group("/user")
+	user := engine.Group("/userdd")
 	{
 		user.GET("/users", controllers.GetUsers)
 	}

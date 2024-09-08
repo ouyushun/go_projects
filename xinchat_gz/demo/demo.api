@@ -49,13 +49,13 @@ type (
 	// 定义路由前缀为 "/v1"
 	prefix: /v1
 )
-// 微服务名称为 user，生成的代码目录和配置文件将和 user 值相关
+// 微服务名称为 userdd，生成的代码目录和配置文件将和 userdd 值相关
 service user {
 	// 定义 http.HandleFunc 转换的 go 文件名称及方法，每个接口都会跟一个 handler
 	@handler login
 	// 定义接口
 	// 请求方法为 post
-	// 路由为 /user/login
+	// 路由为 /userdd/login
 	// 请求体为 LoginReq
 	// 响应体为 LoginResp，响应体必须有 returns 关键字修饰
 	post /user/login (LoginReq) returns (LoginResp)
@@ -77,19 +77,19 @@ service user {
 	// 信息添加上 jwt 相关代码，Auth 值为 jwt 密钥，过期
 	// 等信息配置的 golang 结构体名称
 	//jwt: Auth
-	// 代表当前 service 代码块下的路由生成代码时都会被放到 user 目录下
+	// 代表当前 service 代码块下的路由生成代码时都会被放到 userdd 目录下
 	group: user
 	// 定义路由前缀为 "/v1"
 	prefix: /v1
 )
 // 注意，定义多个 service 代码块时，服务名称必须一致，因此这里的服务名称必须
-// 和上文的 service 名称一样，为 user 服务。
+// 和上文的 service 名称一样，为 userdd 服务。
 service user {
 	// 定义 http.HandleFunc 转换的 go 文件名称及方法，每个接口都会跟一个 handler
 	@handler getUserInfo
 	// 定义接口
 	// 请求方法为 post
-	// 路由为 /user/info
+	// 路由为 /userdd/info
 	// 请求体为 GetUserInfoReq
 	// 响应体为 GetUserInfoResp，响应体必须有 returns 关键字修饰
 	post /user/info (GetUserInfoReq) returns (GetUserInfoResp)
@@ -98,7 +98,7 @@ service user {
 	@handler updateUserInfo
 	// 定义接口
 	// 请求方法为 post
-	// 路由为 /user/info/update
+	// 路由为 /userdd/info/update
 	// 请求体为 UpdateUserInfoReq
 	// 由于不需要响应体，因此可以忽略不写
 	post /user/info/update (UpdateUserInfoReq)
@@ -107,7 +107,7 @@ service user {
 	@handler delUser
 	// 定义接口
 	// 请求方法为 post
-	// 路由为 /user/info/update
+	// 路由为 /userdd/info/update
 	// 请求体为 UpdateUserInfoReq
 	// 由于不需要响应体，因此可以忽略不写
 	post /user/info/del (UpdateUserInfoReq)

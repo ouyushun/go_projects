@@ -2,11 +2,11 @@
 hdfs dfs -moveFromLocal ./olist_customers_dataset.csv  /tmp/olist_customers_dataset
 
 //2.载入数据
-load data local inpath '/home/ds_teacher/user.txt' overwrite into table user_info;
+load data local inpath '/home/ds_teacher/userdd.txt' overwrite into table user_info;
 load data local inpath '/Users/ouyushun/hive/user_info' overwrite into table user_info;
 
 // hive从hdfs加载
-load data inpath '/home/ds_teacher/user.txt' overwrite into table user_info;
+load data inpath '/home/ds_teacher/userdd.txt' overwrite into table user_info;
 load data local inpath '/home/ouyushun0919/hive/user_info' overwrite into table user_info;
 show databases;
 

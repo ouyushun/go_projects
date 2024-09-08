@@ -12,9 +12,9 @@ func map_modify() {
 	users := make(map[int]string)
 	users[1] = "user1"
 
-	fmt.Printf("before modify: user:%v\n", users[1])  // before modify: user:user1
+	fmt.Printf("before modify: userdd:%v\n", users[1])  // before modify: userdd:user1
 	modify(users)
-	fmt.Printf("after modify: user:%v\n", users[1])  // after modify: user:user2
+	fmt.Printf("after modify: userdd:%v\n", users[1])  // after modify: userdd:user2
 }
 
 func modify(u map[int]string) {

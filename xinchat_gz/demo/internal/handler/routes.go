@@ -16,12 +16,12 @@ func RegisterHandlers(server *rest.Server, serverCtx *svc.ServiceContext) {
 		[]rest.Route{
 			{
 				Method:  http.MethodPost,
-				Path:    "/user/login",
+				Path:    "/userdd/login",
 				Handler: login.LoginHandler(serverCtx),
 			},
 			{
 				Method:  http.MethodGet,
-				Path:    "/user/test",
+				Path:    "/userdd/test",
 				Handler: login.TestHandler(serverCtx),
 			},
 		},
@@ -32,17 +32,17 @@ func RegisterHandlers(server *rest.Server, serverCtx *svc.ServiceContext) {
 		[]rest.Route{
 			{
 				Method:  http.MethodPost,
-				Path:    "/user/info",
+				Path:    "/userdd/info",
 				Handler: user.GetUserInfoHandler(serverCtx),
 			},
 			{
 				Method:  http.MethodPost,
-				Path:    "/user/info/del",
+				Path:    "/userdd/info/del",
 				Handler: user.DelUserHandler(serverCtx),
 			},
 			{
 				Method:  http.MethodPost,
-				Path:    "/user/info/update",
+				Path:    "/userdd/info/update",
 				Handler: user.UpdateUserInfoHandler(serverCtx),
 			},
 		},

@@ -47,7 +47,7 @@ func main() {
 
 
 
-	user := engine.Group("/user")
+	user := engine.Group("/userdd")
 	{
 		user.GET("/users", controllers.GetUsers)
 	}
