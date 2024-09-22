@@ -1,0 +1,18 @@
+Name: userdd.rpc
+ListenOn: 0.0.0.0:8080
+Etcd:
+  Hosts:
+  - host.docker.internal:2379
+  Key: userdd.rpc
+
+Mysql:
+  DataSource: root:12345678@tcp(host.docker.internal:3306)/gim_gozero?charset=utf8mb4&parseTime=True&loc=Local
+
+Cache:
+  - Host: host.docker.internal:6379
+    Type: node
+    Pass:
+
+Jwt:
+  AccessSecret: gim
+  AccessExpire: 864000

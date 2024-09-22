@@ -12,7 +12,7 @@ func Router() *gin.Engine {
 
 	log.Printf("aaaaaaaaa")
 
-	user := engine.Group("/userdd")
+	user := engine.Group("/user")
 	{
 		user.GET("/users", controllers.GetUsers)
 	}
@@ -22,7 +22,6 @@ func Router() *gin.Engine {
 			"message": "pong",
 		})
 	})
-
 
 	engine.POST("/user/add", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{

@@ -32,22 +32,18 @@ func main() {
 	engine.Use(gin.LoggerWithConfig(logger.LoggerToFile()))
 	engine.Use(logger.Recover)
 
-
 	//计时器 中间件
 	engine.Use(middleware.MyTime())
 
 	//限流 中间件
 	engine.Use(middleware.LimiterHandler())
 
-
 	//日志 中间件  zap
 	// 初始化日志
 	//global.App.Log = bootstrap.InitializeLog()
 	//global.App.Log.Info("log init success!")
 
-
-
-	user := engine.Group("/userdd")
+	user := engine.Group("/user")
 	{
 		user.GET("/users", controllers.GetUsers)
 	}
